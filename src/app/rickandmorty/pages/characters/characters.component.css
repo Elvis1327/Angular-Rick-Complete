@@ -1,0 +1,174 @@
+
+.main-container{
+  width: 100%;
+  background-color: #3C3E44;
+}
+
+.buscar{
+  padding: 20px;
+}
+
+form{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.buscar label{
+  display: block;
+  font-size: 20px;
+  color: white;
+  font-family: 'poppins';
+}
+
+.buscar input{
+  width: 300px;
+  padding: 20px;
+  outline: none;
+  border-radius: 20px;
+  font-family: 'poppins';
+}
+
+.main-cards{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 40px;
+
+}
+
+.main-card{
+  width: 260px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.418);
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 1px 2px white;
+}
+
+.main-card img{
+  width: 260px;
+  border-radius: 15px;
+}
+/* Card Info */
+.main-infoo{
+  margin-top: 10px;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap:  5px;
+  font-size: 20px;
+}
+
+.card-info h1{
+  font-size: 19px;
+  color: rgb(212, 212, 50);
+  margin-bottom: 0px;
+}
+
+.span{
+  color: white;
+}
+
+#segundo-boton{
+  width: 110px;
+  padding: 5px;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgba(233, 29, 29, 0.473);
+  font-family: 'poppins';
+  color: white;
+  font-size: 15px;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width:599px) {
+
+  .header{
+    padding: 10px;
+  }
+
+  .header h1{
+    font-size: 20px;
+  }
+
+
+  .main-cards{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .main-card{
+    width: 450px;
+    height: 760px;
+    max-width: 100%;
+  }
+
+  .main-info{
+  margin-top: 10px;
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap:  7px;
+  font-size: 12px;
+  }
+
+  .main-card img{
+    width: 450px;
+    max-width: 100%;
+    border-radius: 0px;
+  }
+
+}
+
+
+/* @media screen and (min-width: 500px){
+
+  .main-container{
+    width: 100%;
+  }
+
+  .header{
+    width: 100%;
+  }
+
+  .main-cards{
+    width: 100%;
+    flex-direction: column;
+    column-gap: 200px;
+  }
+
+  .main-card{
+    width: 400px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main-card img{
+    width: 400px ;
+  }
+
+  .header h1{
+    font-size: 24px;
+  }
+
+  .logout{
+    width: 100px;
+    font-size: 14px;
+  }
+
+
+ } */
+

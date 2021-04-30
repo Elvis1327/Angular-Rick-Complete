@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+/* font-family: 'Poppins', sans-serif; */
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+/* @media screen and (max-width: 570px){
+
+  .cards{
+    flex-direction: column;
+  }
+
+  .card{
+    width: 94vw !important;
+    margin: 0px;
+    padding: 0px;
+  }
+  .main-container h1{
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px){
+
+  .cards{
+    display: inline-flex;
+    align-items: center;
+    padding: 0px auto;
+    flex-wrap: wrap;
+  }
+
+  .card{
+
+    width: 48vw !important;
+    margin: 0px;
+    padding: 0px;
+  }
+  .main-container h1{
+    font-size: 20px;
+  }
+} */
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

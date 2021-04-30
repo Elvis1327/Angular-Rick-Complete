@@ -1,0 +1,33 @@
+
+<div class="main-container">
+  <div class="buscar">
+    <form [formGroup]="myForm">
+      <label for="name" placeholder="Searh">Search Your favorite person</label>
+      <input type="text" formControlName="name">
+    </form>
+  </div>
+  <div class="main-cards">
+    <div class="main-card" *ngFor="let user of user | filter:nombre">
+          <img [src]="user.image">
+        <div class="main-infoo">
+          <div class="card-info">
+            <h1 id="h1-info">Name: <span class="span">{{user.name}}</span></h1>
+          </div>
+          <div class="card-info">
+            <h1 id="h1-location">Location: <span class="span">{{user.location.name}}</span></h1>
+          </div>
+          <div class="card-info">
+            <h1 id="h1-gender">Gender: <span class="span">{{user.gender}}</span></h1>
+          </div>
+          <div class="card-info">
+            <h1 id="h1-specie">Species: <span class="span">{{user.species}}</span></h1>
+          </div>
+          <button type="button"
+                  id="segundo-boton"
+                  [routerLink]="['/rick/user', user.id]">Ver Mas..</button>
+        </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>
+

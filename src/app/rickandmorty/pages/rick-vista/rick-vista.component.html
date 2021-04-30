@@ -1,0 +1,28 @@
+
+
+<div class="main-card">
+  <mat-card class="example-card" >
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title style="font-family: 'poppins';">{{user.name}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]="user.image">
+    <mat-card-content>
+      <h1 class="content">Status:
+        <span class="span">{{user.status}}</span>
+      </h1>
+      <h1 class="content">Gender:
+        <span class="span">{{user.gender}}</span>
+      </h1>
+      <h1 class="content">Species:
+        <span class="span">{{user.species}}</span>
+      </h1>
+    </mat-card-content>
+    <mat-card-actions>
+      <button (click)="goBack()" mat-raised-button color="warn">Go Back</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+
+
