@@ -11,8 +11,8 @@ export class FilterPipe implements PipeTransform {
     if(!text){
       return value
     }else{
-      return value.filter(users =>{
-        return users.name.toUpperCase().includes(text.toUpperCase())
+      return value.filter(user =>{
+        return user.name.toUpperCase().includes(text.toUpperCase())
       })
     }
   }

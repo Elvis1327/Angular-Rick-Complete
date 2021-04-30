@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Person } from '../../interfaces/rick';
 import { RickService } from '../../services/rick.service';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-characters',
@@ -18,7 +18,7 @@ export class CharactersComponent implements OnInit {
 
 
   get nombre(){
-    return this.myForm.get('name')?.value
+    return this.myForm.get('name')?.value;
   }
 
   constructor(private rickService: RickService,
