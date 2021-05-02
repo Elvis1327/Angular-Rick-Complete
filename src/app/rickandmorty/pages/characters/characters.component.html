@@ -8,8 +8,10 @@
     </form>
   </div>
 
-  <div class="alert alert-danger animate__animated animate__fadeIn animate__faster" role="alert">
-    No hay personajes registrados con este nombre
+  <div  id="alerta"
+        class="alert alert-danger "
+        *ngIf="(user | filter:nombre).length === 0">
+    <p>No hay personajes registrados con este nombre</p>
   </div>
 
 

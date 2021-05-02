@@ -30,8 +30,18 @@ form{
   font-family: 'poppins';
 }
 
+#alerta{
+  display: block;
+  margin: 0px auto;
+  width: 50%;
+}
+#alerta p{
+  text-align: center;
+}
+
 .main-cards{
   width: 100%;
+  min-height: 1200px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -136,6 +146,10 @@ form{
   form input{
     height: 10px;
     max-width: 100%;
+  }
+
+  #alerta{
+    width: 90%;
   }
 }
 
