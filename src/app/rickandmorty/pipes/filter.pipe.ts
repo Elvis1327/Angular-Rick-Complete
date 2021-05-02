@@ -8,7 +8,7 @@ import { Person } from '../interfaces/rick';
 export class FilterPipe implements PipeTransform {
 
   transform(value: Person[], text: string){
-    if(!text){
+    if(text.length === 0){
       return value
     }else{
       return value.filter(user =>{
