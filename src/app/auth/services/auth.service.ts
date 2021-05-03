@@ -13,9 +13,10 @@ import { Usuario, userInfo } from '../interfaces/auth.interfaces';
 export class AuthService {
 
   public user!: userInfo;
-
   private route: string = environment.authRoute;
-
+  get info(){
+    return {...this.user}
+  }
   constructor(private http: HttpClient) { }
 
   login(email: string, password: string){
@@ -34,7 +35,6 @@ export class AuthService {
     const headers = new HttpHeaders().set('x-token', localStorage.getItem('token') || '');
     return this.http.get<Usuario>(`${this.route}/api/auth/renew`, {headers: headers}).pipe(
       map(res => {
-        localStorage.setItem('token', res.token)
         this.user = {
           name: res.name
         };

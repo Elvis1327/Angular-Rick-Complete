@@ -1,7 +1,17 @@
 
 
+.main-container{
+  background-color: rgba(218, 214, 214, 0.671);
+  width: 100%;
+  min-height: 600px;
+  text-align: center;
+  padding: 20px 80px;
+}
+
+
+/* FORM CARD */
 .card-info{
-  width: 350px;
+  width: 350px;;
   max-width: 100%;
   padding: 20px;
   background-color: white;
@@ -43,7 +53,6 @@
   margin-bottom: 5px;
 }
 
-
 /* Tener Cuenta */
 .tener-cuenta{
   display: flex;
@@ -57,6 +66,9 @@
 }
 
 @media screen and (max-width: 599px){
+  .main-container{
+    padding: 20px 30px;
+  }
   .card-info{
     margin: 0px;
     width: 450px;

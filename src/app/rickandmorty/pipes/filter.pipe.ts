@@ -9,7 +9,7 @@ export class FilterPipe implements PipeTransform {
 
   transform(value: Person[], text: string){
     if(text.length === 0){
-      return value
+      return value;
     }else{
       return value.filter(user =>{
         return user.name.toUpperCase().includes(text.toUpperCase())

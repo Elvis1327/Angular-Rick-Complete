@@ -1,5 +1,13 @@
 
+.main-container{
+  background-color: rgba(218, 214, 214, 0.671);
+  width: 100%;
+  min-height: 600px;
+  text-align: center;
+  padding: 20px 80px;
+}
 
+/* CARD */
 .card-info{
   width: 350px;
   margin: 0px auto;
@@ -54,9 +62,13 @@
 
 
 @media screen and (max-width: 599px){
+  .main-container{
+    padding: 20px 30px;
+  }
   .card-info{
     margin: 0px;
     width: 450px;
+    max-width: 100%;
     margin: 0px auto;
     text-align: center;
   }

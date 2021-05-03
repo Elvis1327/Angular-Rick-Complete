@@ -7,12 +7,12 @@ import { SignupComponent } from './pages/signup/signup.component';
 
 const router: Routes = [
   {
-    path: "",
+    path: '',
     component: MainComponent,
     children: [
       {path: 'login', component: LoginComponent},
       {path: 'signup', component: SignupComponent},
-      {path: '**', redirectTo: 'login'}
+      {path: '**', redirectTo: ''}
     ]
   }
 ]

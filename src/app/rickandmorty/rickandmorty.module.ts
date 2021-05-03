@@ -7,11 +7,13 @@ import { CharactersComponent } from './pages/characters/characters.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     RickVistaComponent,
     CharactersComponent,
-    FilterPipe
+    FilterPipe,
+
   ],
   imports: [
     CommonModule,

@@ -1,9 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ValidarTokenGuard } from './auth/guards/validar.guard';
+import { HomeComponent } from './shared/home/home.component';
 
 
 const routes: Routes = [
+  {
+    path: 'home',
+    component: HomeComponent
+  },
   {
     path: 'rick',
     loadChildren: () => import ('./rickandmorty/rickandmorty.module').then(r => r.RickandmortyModule),
@@ -16,13 +21,13 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'register',
+    redirectTo: 'home',
   }
 ]
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, {useHash: true})
   ],
   exports: [
     RouterModule

@@ -1,6 +1,22 @@
 
 <div class="main-container animate__animated animate__fadeIn animate__faster">
 
+  <header class="header">
+    <div class="hea-na">
+      <h1>Bienvenido: <strong>{{infoUser.name}}</strong></h1>
+    </div>
+    <div class="hea-boton">
+      <button id="1-primero" mat-raised-button color="warn"
+              (click)="logOut()">
+              Log Out
+      </button>
+      <button   mat-raised-button color="primary"
+                id="2-segundo">
+        Go Home
+      </button>
+    </div>
+  </header>
+
   <div class="buscar">
     <form [formGroup]="myForm">
       <label for="name" placeholder="Searh">Search Your favorite person</label>
@@ -31,7 +47,5 @@
         </div>
     </div>
   </div>
-
-  <router-outlet></router-outlet>
 </div>
 
