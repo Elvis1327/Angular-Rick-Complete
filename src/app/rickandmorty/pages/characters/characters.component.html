@@ -7,14 +7,11 @@
       <input type="text" formControlName="name">
     </form>
   </div>
-
   <div  id="alerta"
         class="alert alert-danger "
         *ngIf="(user | filter:nombre).length === 0">
     <p>No hay personajes registrados con este nombre</p>
   </div>
-
-
   <div class="main-cards">
     <div class="main-card animate__animated animate__fadeIn animate__faster" *ngFor="let user of user | filter:nombre">
           <img [src]="user.image">

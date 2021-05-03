@@ -37,6 +37,9 @@ form{
 }
 #alerta p{
   text-align: center;
+  margin-top: 15px;
+  font-size: 20px;
+  font-family: 'poppins', sans-serif;
 }
 
 .main-cards{
@@ -44,10 +47,9 @@ form{
   min-height: 1200px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   gap: 40px;
-  padding: 20px 40px;
+  padding: 20px 80px;
 }
 
 .main-card{
@@ -153,43 +155,4 @@ form{
   }
 }
 
-
-/* @media screen and (min-width: 500px){
-
-  .main-container{
-    width: 100%;
-  }
-
-  .header{
-    width: 100%;
-  }
-
-  .main-cards{
-    width: 100%;
-    flex-direction: column;
-    column-gap: 200px;
-  }
-
-  .main-card{
-    width: 400px;
-    height: 700px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .main-card img{
-    width: 400px ;
-  }
-
-  .header h1{
-    font-size: 24px;
-  }
-
-  .logout{
-    width: 100px;
-    font-size: 14px;
-  }
-
-
- } */
 
